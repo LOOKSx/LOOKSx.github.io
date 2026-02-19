@@ -6,37 +6,50 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="checkLogin()">
+<body onload="checkLogin();loadCart()">
 
 <header>
-    <h1>🏸 Badminton Shop</h1>
-    <button onclick="logout()">Logout</button>
+<div class="logo">🏸 Badminton Shop</div>
+<div>
+<span id="welcome"></span>
+<button class="logout" onclick="logout()">Logout</button>
+</div>
 </header>
 
-<div class="container products">
+<div class="container">
 
-    <div class="card">
-        <h3>Yonex Astrox 99</h3>
-        <p>ราคา 6,500 บาท</p>
-        <button onclick="buyProduct('Astrox 99')">ซื้อ</button>
-    </div>
+<h2>สินค้า</h2>
 
-    <div class="card">
-        <h3>Li-Ning Turbo X</h3>
-        <p>ราคา 3,900 บาท</p>
-        <button onclick="buyProduct('Turbo X')">ซื้อ</button>
-    </div>
+<div class="products">
 
-    <div class="card">
-        <h3>Victor Thruster K</h3>
-        <p>ราคา 5,200 บาท</p>
-        <button onclick="buyProduct('Thruster K')">ซื้อ</button>
-    </div>
+<div class="card">
+<h3>Yonex Astrox 99</h3>
+<p>6,500 บาท</p>
+<button onclick="addCart('Astrox 99',6500)">เพิ่มลงตะกร้า</button>
+</div>
+
+<div class="card">
+<h3>Li-Ning Turbo X</h3>
+<p>3,900 บาท</p>
+<button onclick="addCart('Turbo X',3900)">เพิ่มลงตะกร้า</button>
+</div>
+
+<div class="card">
+<h3>Victor Thruster K</h3>
+<p>5,200 บาท</p>
+<button onclick="addCart('Thruster K',5200)">เพิ่มลงตะกร้า</button>
+</div>
 
 </div>
 
-<script src="auth.js"></script>
-<script src="script.js"></script>
+<div class="card cart">
+<h3>🛒 ตะกร้าสินค้า</h3>
+<div id="cartBox"></div>
+<button onclick="checkout()">ชำระเงิน</button>
+</div>
 
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
