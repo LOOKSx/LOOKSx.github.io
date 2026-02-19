@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        nav {
+            background: #1f2937;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            gap: 20px;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        button {
+            background: #38bdf8;
+            border: none;
+            padding: 10px 15px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>ชื่อของคุณ</h1>
+    <p>Web Developer | Designer | Student</p>
+</header>
+
+<nav>
+    <a href="#about">เกี่ยวกับฉัน</a>
+    <a href="#skills">ทักษะ</a>
+    <a href="#projects">ผลงาน</a>
+    <a href="#contact">ติดต่อ</a>
+</nav>
+
+<section id="about">
+    <h2>เกี่ยวกับฉัน</h2>
+    <div class="card">
+        <p>
+            สวัสดี! ฉันเป็นนักพัฒนาเว็บไซต์ที่สนใจด้าน HTML, CSS และ JavaScript
+            ชอบสร้างเว็บไซต์ที่สวยงามและใช้งานง่าย
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>ทักษะ</h2>
+    <div class="card">
+        <ul>
+            <li>HTML ⭐⭐⭐⭐</li>
+            <li>CSS ⭐⭐⭐⭐</li>
+            <li>JavaScript ⭐⭐⭐</li>
+            <li>UI Design ⭐⭐⭐</li>
+        </ul>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>ผลงาน</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>เว็บไซต์ร้านกาแฟ</h3>
+            <p>เว็บไซต์ตัวอย่างสำหรับร้านกาแฟ</p>
+            <button>ดูผลงาน</button>
+        </div>
+
+        <div class="card">
+            <h3>To-Do List App</h3>
+            <p>แอปจัดการงานด้วย JavaScript</p>
+            <button>ดูผลงาน</button>
+        </div>
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>เว็บไซต์แนะนำตัวเอง</p>
+            <button>ดูผลงาน</button>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>ติดต่อ</h2>
+    <div class="card">
+        <p>Email: your@email.com</p>
+        <p>Facebook: facebook.com/yourname</p>
+        <p>GitHub: github.com/yourname</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 My Portfolio</p>
+</footer>
+
+</body>
+</html>
